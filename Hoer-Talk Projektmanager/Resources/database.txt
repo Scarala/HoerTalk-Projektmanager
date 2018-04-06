@@ -1,0 +1,25 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS `Settings` (
+	`Projektordner`	TEXT,
+	`Username`	TEXT
+);
+CREATE TABLE IF NOT EXISTS `Projekte` (
+	`ID`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`Projektname`	TEXT,
+	`Projekttyp`	TEXT,
+	`Projektleiter`	TEXT,
+	`Beschreibung`	TEXT,
+	`LinkCasting`	TEXT,
+	`LinkProduktion`	TEXT,
+	`LinkStatus`	TEXT,
+	`Projektstatus`	TEXT,
+	`Projektordner`	TEXT,
+	`Kommentar`	TEXT,
+	`Rolle`	TEXT,
+	`MeinStatus`	TEXT,
+	`Deadline`	TEXT,
+	`Projektstart`	TEXT,
+	`Logo`	TEXT,
+	`Archiviert`	TEXT
+);
+COMMIT;
